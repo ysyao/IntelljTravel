@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		10563070C66FCFF9D372B9CA /* Pods_IntelljTraval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559DFFEAEE59BDF8D3F91A5 /* Pods_IntelljTraval.framework */; };
+		121D9DCF1C5B7FE900AA0FAB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */; };
+		1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */; };
+		1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */; };
+		127F56791C5B995A00EB2257 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127F56781C5B995A00EB2257 /* Alamofire.framework */; };
+		127F567B1C5B9B5600EB2257 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F567A1C5B9B5600EB2257 /* Constants.swift */; };
+		127F567D1C5BDCAD00EB2257 /* GenericReturnObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F567C1C5BDCAD00EB2257 /* GenericReturnObject.swift */; };
+		127F567F1C5BDF0500EB2257 /* CommonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 127F567E1C5BDF0500EB2257 /* CommonObject.swift */; };
+		12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */; };
+		12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */; };
 		12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AC61C58673F00FAB475 /* AppDelegate.swift */; };
-		12C80AC91C58673F00FAB475 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AC81C58673F00FAB475 /* FirstViewController.swift */; };
-		12C80ACB1C58673F00FAB475 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80ACA1C58673F00FAB475 /* SecondViewController.swift */; };
 		12C80ACE1C58673F00FAB475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80ACC1C58673F00FAB475 /* Main.storyboard */; };
 		12C80AD01C58673F00FAB475 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 12C80ACF1C58673F00FAB475 /* Assets.xcassets */; };
 		12C80AD31C58673F00FAB475 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80AD11C58673F00FAB475 /* LaunchScreen.storyboard */; };
 		12C80ADE1C58673F00FAB475 /* IntelljTravalTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80ADD1C58673F00FAB475 /* IntelljTravalTests.swift */; };
 		12C80AE91C58673F00FAB475 /* IntelljTravalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AE81C58673F00FAB475 /* IntelljTravalUITests.swift */; };
+		12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */; };
+		12C80AFA1C58748100FAB475 /* CartUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AF91C58748100FAB475 /* CartUIViewController.swift */; };
+		12C80B001C587FF700FAB475 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AFF1C587FF700FAB475 /* Good.swift */; };
+		12CE290E1C5DBE9A00CCADCF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */; };
+		12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE290F1C5DBED100CCADCF /* DataManager.swift */; };
+		12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E59E281C5C6944007F5788 /* GoodsManager.swift */; };
+		21EACB4463E7A06234859F8C /* Pods_IntelljTravalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6F15F47A656A5BA0699779 /* Pods_IntelljTravalTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,20 +50,43 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
+		1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUITableViewController.swift; sourceTree = "<group>"; };
+		1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		127F56701C5B984E00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		127F56721C5B985600EB2257 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_IntelljTravalTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_IntelljTravalTests.framework"; sourceTree = "<group>"; };
+		127F56741C5B98BE00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		127F56751C5B98BE00EB2257 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_IntelljTravalTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_IntelljTravalTests.framework"; sourceTree = "<group>"; };
+		127F56781C5B995A00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		127F567A1C5B9B5600EB2257 /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Constants.swift; path = ../Constants.swift; sourceTree = "<group>"; };
+		127F567C1C5BDCAD00EB2257 /* GenericReturnObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GenericReturnObject.swift; sourceTree = "<group>"; };
+		127F567E1C5BDF0500EB2257 /* CommonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommonObject.swift; sourceTree = "<group>"; };
+		12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodUITableViewCell.swift; sourceTree = "<group>"; };
+		12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIImageView.swift; sourceTree = "<group>"; };
 		12C80AC31C58673F00FAB475 /* IntelljTraval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelljTraval.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		12C80AC61C58673F00FAB475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		12C80AC81C58673F00FAB475 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		12C80ACA1C58673F00FAB475 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		12C80AC61C58673F00FAB475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = IntelljTraval/AppDelegate.swift; sourceTree = "<group>"; };
 		12C80ACD1C58673F00FAB475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		12C80ACF1C58673F00FAB475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		12C80ACF1C58673F00FAB475 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Assets.xcassets; path = IntelljTraval/Assets.xcassets; sourceTree = "<group>"; };
 		12C80AD21C58673F00FAB475 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		12C80AD41C58673F00FAB475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C80AD41C58673F00FAB475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Info.plist; path = IntelljTraval/Info.plist; sourceTree = "<group>"; };
 		12C80AD91C58673F00FAB475 /* IntelljTravalTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelljTravalTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C80ADD1C58673F00FAB475 /* IntelljTravalTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelljTravalTests.swift; sourceTree = "<group>"; };
 		12C80ADF1C58673F00FAB475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C80AE41C58673F00FAB475 /* IntelljTravalUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = IntelljTravalUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C80AE81C58673F00FAB475 /* IntelljTravalUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntelljTravalUITests.swift; sourceTree = "<group>"; };
 		12C80AEA1C58673F00FAB475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIViewController.swift; sourceTree = "<group>"; };
+		12C80AF91C58748100FAB475 /* CartUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartUIViewController.swift; sourceTree = "<group>"; };
+		12C80AFF1C587FF700FAB475 /* Good.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Good.swift; sourceTree = "<group>"; };
+		12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
+		12CE290F1C5DBED100CCADCF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		12E59E281C5C6944007F5788 /* GoodsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsManager.swift; sourceTree = "<group>"; };
+		1698E0B3DDEED970F6A70C20 /* Pods-IntelljTraval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTraval.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTraval/Pods-IntelljTraval.release.xcconfig"; sourceTree = "<group>"; };
+		2E2750705E79E95D6CB1CDBD /* Pods-IntelljTravalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTravalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTravalTests/Pods-IntelljTravalTests.debug.xcconfig"; sourceTree = "<group>"; };
+		4D6F15F47A656A5BA0699779 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelljTravalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6559DFFEAEE59BDF8D3F91A5 /* Pods_IntelljTraval.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelljTraval.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BFE7D6D8B5BC622FEC3C1BB9 /* Pods-IntelljTraval.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTraval.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTraval/Pods-IntelljTraval.debug.xcconfig"; sourceTree = "<group>"; };
+		C42E23E13799D31F8DE227C8 /* Pods-IntelljTravalTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTravalTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTravalTests/Pods-IntelljTravalTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +94,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				127F56791C5B995A00EB2257 /* Alamofire.framework in Frameworks */,
+				121D9DCF1C5B7FE900AA0FAB /* SwiftyJSON.framework in Frameworks */,
+				10563070C66FCFF9D372B9CA /* Pods_IntelljTraval.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +104,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				21EACB4463E7A06234859F8C /* Pods_IntelljTravalTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -76,13 +118,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BCB643896DD207260C2D4E7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				127F56781C5B995A00EB2257 /* Alamofire.framework */,
+				127F56741C5B98BE00EB2257 /* Alamofire.framework */,
+				127F56751C5B98BE00EB2257 /* Pods_IntelljTravalTests.framework */,
+				127F56721C5B985600EB2257 /* Pods_IntelljTravalTests.framework */,
+				127F56701C5B984E00EB2257 /* Alamofire.framework */,
+				121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */,
+				6559DFFEAEE59BDF8D3F91A5 /* Pods_IntelljTraval.framework */,
+				4D6F15F47A656A5BA0699779 /* Pods_IntelljTravalTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		12C80ABA1C58673F00FAB475 = {
 			isa = PBXGroup;
 			children = (
+				12C80AF81C58744500FAB475 /* SupportClasses */,
 				12C80AC51C58673F00FAB475 /* IntelljTraval */,
 				12C80ADC1C58673F00FAB475 /* IntelljTravalTests */,
 				12C80AE71C58673F00FAB475 /* IntelljTravalUITests */,
 				12C80AC41C58673F00FAB475 /* Products */,
+				5181D0B3D3E468FED6C97026 /* Pods */,
+				0BCB643896DD207260C2D4E7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,13 +159,11 @@
 		12C80AC51C58673F00FAB475 /* IntelljTraval */ = {
 			isa = PBXGroup;
 			children = (
-				12C80AC61C58673F00FAB475 /* AppDelegate.swift */,
-				12C80AC81C58673F00FAB475 /* FirstViewController.swift */,
-				12C80ACA1C58673F00FAB475 /* SecondViewController.swift */,
+				12C80AFE1C587FBC00FAB475 /* ViewControllers */,
+				12E59E2A1C5C9494007F5788 /* Views */,
+				12E59E271C5C691D007F5788 /* DataManagers */,
+				12C80AFC1C587FA400FAB475 /* Models */,
 				12C80ACC1C58673F00FAB475 /* Main.storyboard */,
-				12C80ACF1C58673F00FAB475 /* Assets.xcassets */,
-				12C80AD11C58673F00FAB475 /* LaunchScreen.storyboard */,
-				12C80AD41C58673F00FAB475 /* Info.plist */,
 			);
 			path = IntelljTraval;
 			sourceTree = "<group>";
@@ -128,6 +186,70 @@
 			path = IntelljTravalUITests;
 			sourceTree = "<group>";
 		};
+		12C80AF81C58744500FAB475 /* SupportClasses */ = {
+			isa = PBXGroup;
+			children = (
+				12C80ACF1C58673F00FAB475 /* Assets.xcassets */,
+				12C80AD11C58673F00FAB475 /* LaunchScreen.storyboard */,
+				12C80AD41C58673F00FAB475 /* Info.plist */,
+				12C80AC61C58673F00FAB475 /* AppDelegate.swift */,
+			);
+			name = SupportClasses;
+			sourceTree = "<group>";
+		};
+		12C80AFC1C587FA400FAB475 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				12C80AFF1C587FF700FAB475 /* Good.swift */,
+				127F567C1C5BDCAD00EB2257 /* GenericReturnObject.swift */,
+				127F567E1C5BDF0500EB2257 /* CommonObject.swift */,
+			);
+			name = Models;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		12C80AFE1C587FBC00FAB475 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */,
+				12C80AF91C58748100FAB475 /* CartUIViewController.swift */,
+				1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		12E59E271C5C691D007F5788 /* DataManagers */ = {
+			isa = PBXGroup;
+			children = (
+				127F567A1C5B9B5600EB2257 /* Constants.swift */,
+				12E59E281C5C6944007F5788 /* GoodsManager.swift */,
+				12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */,
+				12CE290F1C5DBED100CCADCF /* DataManager.swift */,
+			);
+			name = DataManagers;
+			sourceTree = "<group>";
+		};
+		12E59E2A1C5C9494007F5788 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */,
+				12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */,
+				1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		5181D0B3D3E468FED6C97026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFE7D6D8B5BC622FEC3C1BB9 /* Pods-IntelljTraval.debug.xcconfig */,
+				1698E0B3DDEED970F6A70C20 /* Pods-IntelljTraval.release.xcconfig */,
+				2E2750705E79E95D6CB1CDBD /* Pods-IntelljTravalTests.debug.xcconfig */,
+				C42E23E13799D31F8DE227C8 /* Pods-IntelljTravalTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -135,9 +257,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C80AED1C58673F00FAB475 /* Build configuration list for PBXNativeTarget "IntelljTraval" */;
 			buildPhases = (
+				25E05D36F6B069B907FA3B56 /* Check Pods Manifest.lock */,
 				12C80ABF1C58673F00FAB475 /* Sources */,
 				12C80AC01C58673F00FAB475 /* Frameworks */,
 				12C80AC11C58673F00FAB475 /* Resources */,
+				0C049906865C2FCD3789D816 /* Embed Pods Frameworks */,
+				830164D939A8A0348A66C5F9 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -152,9 +277,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 12C80AF01C58673F00FAB475 /* Build configuration list for PBXNativeTarget "IntelljTravalTests" */;
 			buildPhases = (
+				6ACB020C06ABF889A6D45383 /* Check Pods Manifest.lock */,
 				12C80AD51C58673F00FAB475 /* Sources */,
 				12C80AD61C58673F00FAB475 /* Frameworks */,
 				12C80AD71C58673F00FAB475 /* Resources */,
+				57FF2687A47460BBBBC94E9C /* Embed Pods Frameworks */,
+				4F92601605307F35D607AE2A /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,14 +385,118 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0C049906865C2FCD3789D816 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelljTraval/Pods-IntelljTraval-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		25E05D36F6B069B907FA3B56 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F92601605307F35D607AE2A /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelljTravalTests/Pods-IntelljTravalTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57FF2687A47460BBBBC94E9C /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelljTravalTests/Pods-IntelljTravalTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6ACB020C06ABF889A6D45383 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		830164D939A8A0348A66C5F9 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-IntelljTraval/Pods-IntelljTraval-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		12C80ABF1C58673F00FAB475 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12C80ACB1C58673F00FAB475 /* SecondViewController.swift in Sources */,
+				127F567B1C5B9B5600EB2257 /* Constants.swift in Sources */,
+				12CE290E1C5DBE9A00CCADCF /* ImageManager.swift in Sources */,
+				12C80AFA1C58748100FAB475 /* CartUIViewController.swift in Sources */,
+				127F567D1C5BDCAD00EB2257 /* GenericReturnObject.swift in Sources */,
+				12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */,
+				1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */,
+				12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */,
+				12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */,
+				12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */,
+				1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */,
+				12C80B001C587FF700FAB475 /* Good.swift in Sources */,
+				12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */,
 				12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */,
-				12C80AC91C58673F00FAB475 /* FirstViewController.swift in Sources */,
+				127F567F1C5BDF0500EB2257 /* CommonObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -314,6 +546,7 @@
 				12C80AD21C58673F00FAB475 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			path = IntelljTraval;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -402,9 +635,15 @@
 		};
 		12C80AEE1C58673F00FAB475 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BFE7D6D8B5BC622FEC3C1BB9 /* Pods-IntelljTraval.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = IntelljTraval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyandhurry.IntelljTraval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -413,9 +652,15 @@
 		};
 		12C80AEF1C58673F00FAB475 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1698E0B3DDEED970F6A70C20 /* Pods-IntelljTraval.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/build/Debug-iphoneos",
+				);
 				INFOPLIST_FILE = IntelljTraval/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.jimmyandhurry.IntelljTraval;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -424,6 +669,7 @@
 		};
 		12C80AF11C58673F00FAB475 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2E2750705E79E95D6CB1CDBD /* Pods-IntelljTravalTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = IntelljTravalTests/Info.plist;
@@ -436,6 +682,7 @@
 		};
 		12C80AF21C58673F00FAB475 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C42E23E13799D31F8DE227C8 /* Pods-IntelljTravalTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = IntelljTravalTests/Info.plist;
@@ -489,6 +736,7 @@
 				12C80AEF1C58673F00FAB475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12C80AF01C58673F00FAB475 /* Build configuration list for PBXNativeTarget "IntelljTravalTests" */ = {
 			isa = XCConfigurationList;
@@ -497,6 +745,7 @@
 				12C80AF21C58673F00FAB475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		12C80AF31C58673F00FAB475 /* Build configuration list for PBXNativeTarget "IntelljTravalUITests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +754,7 @@
 				12C80AF51C58673F00FAB475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
