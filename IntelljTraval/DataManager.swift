@@ -30,6 +30,7 @@ class DataManager {
     }
     
     func sendGetRequest<T: CommonObject>(url: String, parameters: [String: AnyObject]?, dataManagerResponse: DataManagerResponse<T>) {
+        print(url)
         Alamofire.request(.GET, url, parameters: parameters).responseString {
             response in
             if response.result.isSuccess {
