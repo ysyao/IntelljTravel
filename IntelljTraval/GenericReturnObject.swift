@@ -11,7 +11,7 @@ import SwiftyJSON
 
 public class GenericReturnObject<T: CommonObject> {
     var obj: AnyObject?
-    lazy var list: [T] = [T]()
+    lazy var list = [T]()
     var rn: String?
     var ri: NSObject?
     

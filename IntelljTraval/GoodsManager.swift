@@ -12,7 +12,6 @@ import Alamofire
 
 class GoodsManager: DataManager {
     
-    
     //*****************************************************************
     // MARK : Get JSON from server
     //*****************************************************************
@@ -38,7 +37,7 @@ class GoodsManager: DataManager {
                     let json: JSON = JSON.parse(goodJson)
                     
                     //解析json
-                    let genericGood: GenericReturnObject<Good> = GenericReturnObject<Good>()
+                    let genericGood = GenericReturnObject<Good>()
                     let goods: [Good] = genericGood.parseGenericReturnObject(json).list
                     
                     success(goods: goods)
@@ -47,5 +46,17 @@ class GoodsManager: DataManager {
                 error(error: response.result.error!)
             }
         }
+    }
+    
+    func getGoods(scenicId scenicId: String, searchContent: String, type: String, sortType: String, page:String, pageSize: String, dataManagerResponse: DataManagerResponse<Good>) {
+        let parameters = [
+            "scenicId"      : scenicId,
+            "searchContent" : searchContent,
+            "type"          : type,
+            "sortType"      : sortType,
+            "page"          : page,
+            "pageSize"      : pageSize
+        ]
+        sendGetRequest(Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters, dataManagerResponse: dataManagerResponse)
     }
 }

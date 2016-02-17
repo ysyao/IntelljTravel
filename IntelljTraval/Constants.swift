@@ -13,5 +13,6 @@ public class Constants {
     public struct IntelljTravalURL {
         static let GET_GOODS_LIST: String = HOST + "/hsh/goods/getGoodsListPage"
         static let IT_PICTURE_URL: String = HOST + "/hsh/image/"
+        static let IT_GOODS_DETAILS = HOST + "/hsh/goods/getGoodsDetails";
     }
 }

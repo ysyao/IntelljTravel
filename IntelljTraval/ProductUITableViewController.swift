@@ -43,17 +43,16 @@ class ProductUITableViewController: UITableViewController {
         //清理缓存
         imageManager.imageCache?.clearDiskCache()
         
-        //获取数据
         goodsManager.getGoods(
-            scenicId        : "1",
-            searchContent   : "",
-            type            : "",
-            sortType        : "0",
-            page            : String(page),
-            pageSize        : "20",
-            success         : getGoodsSuccess,
-            error           : getGoodsError
-        )
+            scenicId:               "1",
+            searchContent:          "",
+            type:                   "",
+            sortType:               "0",
+            page:                   String(page),
+            pageSize:               "20",
+            dataManagerResponse:    DataManagerResponse<Good>(
+                success:    getGoodsSuccess,
+                error:      getGoodsError))
     }
     
     //载入下一页数据
