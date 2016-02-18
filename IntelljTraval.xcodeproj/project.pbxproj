@@ -17,6 +17,7 @@
 		126D39D71C71C9B70050CE94 /* CommonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D39D61C71C9B70050CE94 /* CommonObject.swift */; };
 		126D39D91C71C9DE0050CE94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D39D81C71C9DE0050CE94 /* Constants.swift */; };
 		127F56791C5B995A00EB2257 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127F56781C5B995A00EB2257 /* Alamofire.framework */; };
+		129DFFE41C7607CF00E76503 /* ProductDetailUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */; };
 		12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */; };
 		12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */; };
 		12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AC61C58673F00FAB475 /* AppDelegate.swift */; };
@@ -65,6 +66,7 @@
 		127F56741C5B98BE00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		127F56751C5B98BE00EB2257 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_IntelljTravalTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_IntelljTravalTests.framework"; sourceTree = "<group>"; };
 		127F56781C5B995A00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailUIViewController.swift; sourceTree = "<group>"; };
 		12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodUITableViewCell.swift; sourceTree = "<group>"; };
 		12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIImageView.swift; sourceTree = "<group>"; };
 		12C80AC31C58673F00FAB475 /* IntelljTraval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelljTraval.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -219,6 +221,7 @@
 				12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */,
 				12C80AF91C58748100FAB475 /* CartUIViewController.swift */,
 				1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */,
+				129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -494,6 +497,7 @@
 				12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */,
 				1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */,
 				126D39D91C71C9DE0050CE94 /* Constants.swift in Sources */,
+				129DFFE41C7607CF00E76503 /* ProductDetailUIViewController.swift in Sources */,
 				12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */,
 				12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */,
 				126D39D71C71C9B70050CE94 /* CommonObject.swift in Sources */,

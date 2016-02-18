@@ -16,6 +16,8 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     
     var uiRefreshControl: UIRefreshControl?
     let searchController = UISearchController(searchResultsController: nil)
+    
+    //查询产品关键字，默认为空,会在addMore()和searchProductByKeyword()两个方法中被设置为参数
     var keyword: String = ""
     
     private var goods: [Good] = [] {
@@ -31,8 +33,10 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        //设置navigation bar不为半透明，否则在打开新页面的时候会在右上角出现阴影
+        self.navigationController?.navigationBar.translucent = false;
         
-        //配置刷新控制
+        //配置刷新控制器
         uiRefreshControl = UIRefreshControl()
         uiRefreshControl?.addTarget(self, action: Selector("onRefresh"), forControlEvents: UIControlEvents.ValueChanged)
         self.refreshControl = uiRefreshControl
@@ -80,6 +84,21 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         return UITableViewCell()
     }
     
+    override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
+        if let indexPath = self.tableView.indexPathForSelectedRow {
+//            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
+//            DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"detailViewController"];
+            
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            if let productDetailVc: ProductDetailUIViewController = storyboard.instantiateViewControllerWithIdentifier("productDetailVc") as? ProductDetailUIViewController {
+                productDetailVc.good = goods[indexPath.row]
+                
+                self.hidesBottomBarWhenPushed = true
+                self.navigationController?.pushViewController(productDetailVc, animated: true)
+                self.hidesBottomBarWhenPushed = false
+            }
+        }
+    }
     
     func updateSearchResultsForSearchController(searchController: UISearchController) {
 //        convertButtonTitle("取消", view: searchController.searchBar)
@@ -213,7 +232,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     //*****************************************************************
     // MARK : 配置SearchController
     //*****************************************************************
-    func configureSearchController() -> UISearchBar{
+    func configureSearchController() -> UISearchBar {
         searchController.searchResultsUpdater = self
         searchController.dimsBackgroundDuringPresentation = false
         definesPresentationContext = true
