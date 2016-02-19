@@ -7,7 +7,7 @@
 //
 import UIKit
 
-class ProductUITableViewController: UITableViewController, UISearchResultsUpdating {
+class ProductUITableViewController: UITableViewController, UISearchResultsUpdating, UISearchControllerDelegate {
     struct Constants {
         static let scenicId = "1"
         static let pageSize = "20"
@@ -34,7 +34,9 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置navigation bar不为半透明，否则在打开新页面的时候会在右上角出现阴影
-        self.navigationController?.navigationBar.translucent = false;
+//        self.navigationController?.navigationBar.translucent = false;
+        //设置navigation bar为白色解决了阴影问题，也解决了searchbar位置错误的问题
+        self.navigationController!.view.backgroundColor = UIColor(white: 1, alpha: 1)
         
         //配置刷新控制器
         uiRefreshControl = UIRefreshControl()
@@ -86,12 +88,11 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     
     override func tableView(tableView: UITableView, didSelectRowAtIndexPath indexPath: NSIndexPath) {
         if let indexPath = self.tableView.indexPathForSelectedRow {
-//            UIStoryboard *sb = [UIStoryboard storyboardWithName:@"MainStoryboard" bundle:nil];
-//            DetailViewController *vc = [sb instantiateViewControllerWithIdentifier:@"detailViewController"];
-            
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let productDetailVc: ProductDetailUIViewController = storyboard.instantiateViewControllerWithIdentifier("productDetailVc") as? ProductDetailUIViewController {
                 productDetailVc.good = goods[indexPath.row]
+                
+                self.searchController.searchBar
                 
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(productDetailVc, animated: true)
@@ -100,10 +101,39 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         }
     }
     
+//    func didPresentSearchController(searchController: UISearchController) {
+//        self.tableView.tableHeaderView = searchController.searchBar
+//    }
+//    
+//    func didDismissSearchController(searchController: UISearchController) {
+//        self.tableView.tableHeaderView = searchController.searchBar
+//    }
+    
     func updateSearchResultsForSearchController(searchController: UISearchController) {
-//        convertButtonTitle("取消", view: searchController.searchBar)
         self.keyword = searchController.searchBar.text ?? ""
         searchProductByKeyword()
+    }
+    
+    //*****************************************************************
+    // MARK : 配置SearchController
+    //*****************************************************************
+    func configureSearchController() -> UISearchBar {
+        searchController.searchResultsUpdater = self
+        searchController.delegate = self
+        searchController.dimsBackgroundDuringPresentation = false
+        searchController.hidesNavigationBarDuringPresentation = true
+        searchController.searchBar.frame = CGRectMake (
+            self.searchController.searchBar.frame.origin.x,
+            self.searchController.searchBar.frame.origin.y,
+            self.searchController.searchBar.frame.size.width,
+            44.0
+        );
+        definesPresentationContext = true
+        let searchBar = searchController.searchBar
+        searchBar.placeholder = "搜索商品"
+        searchBar.barTintColor = UIColor.lightTextColor()
+        //        convertButtonTitle("取消", view: searchController.searchBar)
+        return searchBar
     }
     
     //*****************************************************************
@@ -227,20 +257,6 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         footerIndicator.frame = CGRectMake(0, 0, 320, 44)
         self.tableView.tableFooterView = footerIndicator
         return footerIndicator
-    }
-    
-    //*****************************************************************
-    // MARK : 配置SearchController
-    //*****************************************************************
-    func configureSearchController() -> UISearchBar {
-        searchController.searchResultsUpdater = self
-        searchController.dimsBackgroundDuringPresentation = false
-        definesPresentationContext = true
-        let searchBar = searchController.searchBar
-        searchBar.placeholder = "搜索商品"
-//        convertButtonTitle("取消", view: searchController.searchBar)
-        
-        return searchBar
     }
     
     func convertButtonTitle(title: String, view: UIView) {

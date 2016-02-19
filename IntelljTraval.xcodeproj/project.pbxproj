@@ -10,6 +10,7 @@
 		10563070C66FCFF9D372B9CA /* Pods_IntelljTraval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559DFFEAEE59BDF8D3F91A5 /* Pods_IntelljTraval.framework */; };
 		121D9DCF1C5B7FE900AA0FAB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */; };
 		1228EED01C7309C300202CC1 /* GoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228EECF1C7309C300202CC1 /* GoodDetail.swift */; };
+		125680BB1C76B80A00908C17 /* RadiusUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125680BA1C76B80A00908C17 /* RadiusUIButton.swift */; };
 		1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */; };
 		1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */; };
 		126D39D31C71C93D0050CE94 /* Good.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D39D21C71C93D0050CE94 /* Good.swift */; };
@@ -55,6 +56,7 @@
 /* Begin PBXFileReference section */
 		121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		1228EECF1C7309C300202CC1 /* GoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoodDetail.swift; path = IntelljTraval/GoodDetail.swift; sourceTree = "<group>"; };
+		125680BA1C76B80A00908C17 /* RadiusUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusUIButton.swift; sourceTree = "<group>"; };
 		1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUITableViewController.swift; sourceTree = "<group>"; };
 		1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		126D39D21C71C93D0050CE94 /* Good.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Good.swift; path = IntelljTraval/Good.swift; sourceTree = "<group>"; };
@@ -244,6 +246,7 @@
 				12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */,
 				12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */,
 				1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */,
+				125680BA1C76B80A00908C17 /* RadiusUIButton.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -507,6 +510,7 @@
 				1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */,
 				12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */,
 				126D39D31C71C93D0050CE94 /* Good.swift in Sources */,
+				125680BB1C76B80A00908C17 /* RadiusUIButton.swift in Sources */,
 				12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */,
 				1228EED01C7309C300202CC1 /* GoodDetail.swift in Sources */,
 			);
