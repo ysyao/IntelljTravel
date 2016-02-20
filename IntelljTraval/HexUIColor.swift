@@ -8,10 +8,12 @@
 import UIKit
 
 class HexUIColor: UIColor {
-    static let PrimaryColor = 0x33CC66
-    static let DarkerPrimaryColor = 0x339966
-    static let LighterPrimaryColor = 0xCCFFCC
-    static let Gray = 0xCCCCCC
+    struct HexUIColorItems {
+        static let PrimaryColor = 0x33CC66
+        static let DarkerPrimaryColor = 0x339966
+        static let LighterPrimaryColor = 0xCCFFCC
+        static let PrimaryGray = 0xE8E8E8
+    }
     
     convenience init(red: Int, green: Int, blue: Int) {
         assert(red >= 0 && red <= 255, "Invalid red component")

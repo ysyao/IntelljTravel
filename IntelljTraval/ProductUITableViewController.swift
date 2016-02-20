@@ -14,7 +14,6 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         static let sortType = "0"
     }
     
-    var uiRefreshControl: UIRefreshControl?
     let searchController = UISearchController(searchResultsController: nil)
     
     //查询产品关键字，默认为空,会在addMore()和searchProductByKeyword()两个方法中被设置为参数
@@ -39,9 +38,9 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         self.navigationController!.view.backgroundColor = UIColor(white: 1, alpha: 1)
         
         //配置刷新控制器
-        uiRefreshControl = UIRefreshControl()
-        uiRefreshControl?.addTarget(self, action: Selector("onRefresh"), forControlEvents: UIControlEvents.ValueChanged)
-        self.refreshControl = uiRefreshControl
+        self.refreshControl = UIRefreshControl()
+        self.refreshControl!.addTarget(self, action: Selector("onRefresh"), forControlEvents: UIControlEvents.ValueChanged)
+        self.refreshControl!.backgroundColor = HexUIColor(netHex: HexUIColor.HexUIColorItems.PrimaryGray)
         
         //配置搜索控制器
         self.tableView.tableHeaderView = configureSearchController()
@@ -101,14 +100,6 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         }
     }
     
-//    func didPresentSearchController(searchController: UISearchController) {
-//        self.tableView.tableHeaderView = searchController.searchBar
-//    }
-//    
-//    func didDismissSearchController(searchController: UISearchController) {
-//        self.tableView.tableHeaderView = searchController.searchBar
-//    }
-    
     func updateSearchResultsForSearchController(searchController: UISearchController) {
         self.keyword = searchController.searchBar.text ?? ""
         searchProductByKeyword()
@@ -139,17 +130,21 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
 //        textFieldInsideSearchBarLabel?.textColor = HexUIColor(netHex: HexUIColor.DarkerPrimaryColor)
 //        searchBar.barTintColor = UIColor.whiteColor()
         
-        //设置searchbarstyle为精简
+        //设置searchbar颜色
 //        searchBar.searchBarStyle = UISearchBarStyle.Minimal
 //        let textFieldInsideSearchBar = searchBar.valueForKey("searchField") as? UITextField
 //        textFieldInsideSearchBar?.backgroundColor = HexUIColor(netHex: HexUIColor.Gray)
 //        textFieldInsideSearchBar?.tintColor = UIColor.whiteColor()
-//        searchBar.backgroundColor = UIColor.whiteColor()
+        searchBar.barTintColor = HexUIColor(netHex: HexUIColor.HexUIColorItems.PrimaryGray)
         
         //将searchbar上面的“Cancel”按键换成“完成”，颜色改为深绿
         let barButton = UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.Type]())
-        barButton.tintColor = HexUIColor(netHex: HexUIColor.DarkerPrimaryColor)
-        barButton.title = "完成"
+        barButton.tintColor = HexUIColor(netHex: HexUIColor.HexUIColorItems.DarkerPrimaryColor)
+        searchBar.setValue("完成", forKey:"_cancelButtonText")
+        
+        //消除uisearchbar上下的分界线
+        searchBar.layer.borderWidth = 1
+        searchBar.layer.borderColor = HexUIColor(netHex: HexUIColor.HexUIColorItems.PrimaryGray).CGColor
         return searchBar
     }
     
@@ -158,10 +153,8 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     //*****************************************************************
     func getGoodsSuccess(goods: [Good]) -> Void {
         //将刷新状态解除
-        if let isControlRefreshing = uiRefreshControl?.refreshing {
-            if isControlRefreshing {
-                uiRefreshControl?.endRefreshing()
-            }
+        if self.refreshControl!.refreshing {
+           self.refreshControl!.endRefreshing()
         }
 
         self.goods = goods
@@ -196,7 +189,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     func onRefresh() {
         //开始显示刷新标志
         if (self.refreshControl?.refreshing == false) {
-            uiRefreshControl?.beginRefreshing()
+            self.refreshControl?.beginRefreshing()
         }
         
         //将page设置为0，以免之后载入分页数据出现错误
