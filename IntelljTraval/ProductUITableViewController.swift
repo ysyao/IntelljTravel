@@ -122,17 +122,34 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         searchController.delegate = self
         searchController.dimsBackgroundDuringPresentation = false
         searchController.hidesNavigationBarDuringPresentation = true
-        searchController.searchBar.frame = CGRectMake (
+        let searchBar = searchController.searchBar
+        searchBar.frame = CGRectMake (
             self.searchController.searchBar.frame.origin.x,
             self.searchController.searchBar.frame.origin.y,
             self.searchController.searchBar.frame.size.width,
             44.0
         );
         definesPresentationContext = true
-        let searchBar = searchController.searchBar
         searchBar.placeholder = "搜索商品"
-        searchBar.barTintColor = UIColor.lightTextColor()
-        //        convertButtonTitle("取消", view: searchController.searchBar)
+        
+        //设置searchbar的placeholder文字颜色为主色
+//        let textFieldInsideSearchBar = searchBar.valueForKey("searchField") as? UITextField
+//        textFieldInsideSearchBar?.backgroundColor = HexUIColor(netHex: HexUIColor.Gray)
+//        let textFieldInsideSearchBarLabel = textFieldInsideSearchBar!.valueForKey("placeholderLabel") as? UILabel
+//        textFieldInsideSearchBarLabel?.textColor = HexUIColor(netHex: HexUIColor.DarkerPrimaryColor)
+//        searchBar.barTintColor = UIColor.whiteColor()
+        
+        //设置searchbarstyle为精简
+//        searchBar.searchBarStyle = UISearchBarStyle.Minimal
+//        let textFieldInsideSearchBar = searchBar.valueForKey("searchField") as? UITextField
+//        textFieldInsideSearchBar?.backgroundColor = HexUIColor(netHex: HexUIColor.Gray)
+//        textFieldInsideSearchBar?.tintColor = UIColor.whiteColor()
+//        searchBar.backgroundColor = UIColor.whiteColor()
+        
+        //将searchbar上面的“Cancel”按键换成“完成”，颜色改为深绿
+        let barButton = UIBarButtonItem.appearanceWhenContainedInInstancesOfClasses([UISearchBar.Type]())
+        barButton.tintColor = HexUIColor(netHex: HexUIColor.DarkerPrimaryColor)
+        barButton.title = "完成"
         return searchBar
     }
     
@@ -258,16 +275,4 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
         self.tableView.tableFooterView = footerIndicator
         return footerIndicator
     }
-    
-    func convertButtonTitle(title: String, view: UIView) {
-        if view.isKindOfClass(UIButton) {
-            let cancelButton = view as! UIButton
-            cancelButton.setTitle(title, forState: UIControlState.Normal)
-        }
-        
-        for subView in view.subviews {
-            self.convertButtonTitle(title, view: subView)
-        }
-    }
-
 }
