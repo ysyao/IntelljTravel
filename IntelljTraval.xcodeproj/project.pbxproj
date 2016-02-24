@@ -20,6 +20,10 @@
 		127F56791C5B995A00EB2257 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127F56781C5B995A00EB2257 /* Alamofire.framework */; };
 		129DFC6C1C78105A00FD44F6 /* HexUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DFC6B1C78105A00FD44F6 /* HexUIColor.swift */; };
 		129DFFE41C7607CF00E76503 /* ProductDetailUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */; };
+		12A050FD1C7DEB5400A64297 /* UIBillboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */; };
+		12A050FF1C7DEC3900A64297 /* UIBillboardViewDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */; };
+		12A051001C7DEF7C00A64297 /* UIBillboardViewDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */; };
+		12A051011C7DEF9400A64297 /* UIBillboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */; };
 		12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */; };
 		12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */; };
 		12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AC61C58673F00FAB475 /* AppDelegate.swift */; };
@@ -71,6 +75,8 @@
 		127F56781C5B995A00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		129DFC6B1C78105A00FD44F6 /* HexUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexUIColor.swift; sourceTree = "<group>"; };
 		129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailUIViewController.swift; sourceTree = "<group>"; };
+		12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBillboardViewController.swift; sourceTree = "<group>"; };
+		12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBillboardViewDelegator.swift; sourceTree = "<group>"; };
 		12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodUITableViewCell.swift; sourceTree = "<group>"; };
 		12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIImageView.swift; sourceTree = "<group>"; };
 		12C80AC31C58673F00FAB475 /* IntelljTraval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelljTraval.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -258,6 +264,8 @@
 				12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */,
 				1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */,
 				125680BA1C76B80A00908C17 /* RadiusUIButton.swift */,
+				12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */,
+				12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */,
 			);
 			name = Views;
 			sourceTree = "<group>";
@@ -515,11 +523,13 @@
 				12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */,
 				12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */,
 				129DFC6C1C78105A00FD44F6 /* HexUIColor.swift in Sources */,
+				12A050FF1C7DEC3900A64297 /* UIBillboardViewDelegator.swift in Sources */,
 				126D39D71C71C9B70050CE94 /* CommonObject.swift in Sources */,
 				12FBBC3C1C741281008A5E43 /* DataManagerResponse.swift in Sources */,
 				126D39D51C71C9700050CE94 /* GenericReturnObject.swift in Sources */,
 				12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */,
 				1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */,
+				12A050FD1C7DEB5400A64297 /* UIBillboardViewController.swift in Sources */,
 				12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */,
 				126D39D31C71C93D0050CE94 /* Good.swift in Sources */,
 				125680BB1C76B80A00908C17 /* RadiusUIButton.swift in Sources */,
@@ -532,7 +542,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				12A051001C7DEF7C00A64297 /* UIBillboardViewDelegator.swift in Sources */,
 				12C80ADE1C58673F00FAB475 /* IntelljTravalTests.swift in Sources */,
+				12A051011C7DEF9400A64297 /* UIBillboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

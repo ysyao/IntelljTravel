@@ -32,8 +32,6 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //设置navigation bar不为半透明，否则在打开新页面的时候会在右上角出现阴影
-//        self.navigationController?.navigationBar.translucent = false;
         //设置navigation bar为白色解决了阴影问题，也解决了searchbar位置错误的问题
         self.navigationController!.view.backgroundColor = UIColor(white: 1, alpha: 1)
         

@@ -11,8 +11,7 @@ import UIKit
 
 class ProductDetailUIViewController: UIViewController {
     var good: Good?
-    
-    override func viewDidLoad() {
+        override func viewDidLoad() {
         super.viewDidLoad()
         
     }
