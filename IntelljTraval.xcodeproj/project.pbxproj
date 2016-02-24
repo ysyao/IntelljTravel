@@ -241,6 +241,7 @@
 				12C80AF91C58748100FAB475 /* CartUIViewController.swift */,
 				1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */,
 				129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */,
+				12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -264,7 +265,6 @@
 				12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */,
 				1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */,
 				125680BA1C76B80A00908C17 /* RadiusUIButton.swift */,
-				12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */,
 				12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */,
 			);
 			name = Views;
