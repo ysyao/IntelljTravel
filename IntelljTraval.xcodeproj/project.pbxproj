@@ -10,6 +10,8 @@
 		10563070C66FCFF9D372B9CA /* Pods_IntelljTraval.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6559DFFEAEE59BDF8D3F91A5 /* Pods_IntelljTraval.framework */; };
 		121D9DCF1C5B7FE900AA0FAB /* SwiftyJSON.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */; };
 		1228EED01C7309C300202CC1 /* GoodDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1228EECF1C7309C300202CC1 /* GoodDetail.swift */; };
+		124373D11C7EA2DE00FB6C65 /* GoodsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124373D01C7EA2DE00FB6C65 /* GoodsService.swift */; };
+		124373D31C7EA32600FB6C65 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 124373D21C7EA32600FB6C65 /* DataService.swift */; };
 		125680BB1C76B80A00908C17 /* RadiusUIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 125680BA1C76B80A00908C17 /* RadiusUIButton.swift */; };
 		1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */; };
 		1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */; };
@@ -18,13 +20,13 @@
 		126D39D71C71C9B70050CE94 /* CommonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D39D61C71C9B70050CE94 /* CommonObject.swift */; };
 		126D39D91C71C9DE0050CE94 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 126D39D81C71C9DE0050CE94 /* Constants.swift */; };
 		127F56791C5B995A00EB2257 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 127F56781C5B995A00EB2257 /* Alamofire.framework */; };
+		128A07941C7EEB1F00D1F5FC /* VoidCommonObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128A07931C7EEB1F00D1F5FC /* VoidCommonObject.swift */; };
 		129DFC6C1C78105A00FD44F6 /* HexUIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DFC6B1C78105A00FD44F6 /* HexUIColor.swift */; };
 		129DFFE41C7607CF00E76503 /* ProductDetailUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */; };
 		12A050FD1C7DEB5400A64297 /* UIBillboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */; };
 		12A050FF1C7DEC3900A64297 /* UIBillboardViewDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */; };
-		12A051001C7DEF7C00A64297 /* UIBillboardViewDelegator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */; };
-		12A051011C7DEF9400A64297 /* UIBillboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */; };
 		12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */; };
+		12B7E8111C7EA78B00C0894E /* GoodDetailService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12B7E8101C7EA78B00C0894E /* GoodDetailService.swift */; };
 		12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */; };
 		12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AC61C58673F00FAB475 /* AppDelegate.swift */; };
 		12C80ACE1C58673F00FAB475 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 12C80ACC1C58673F00FAB475 /* Main.storyboard */; };
@@ -34,10 +36,8 @@
 		12C80AE91C58673F00FAB475 /* IntelljTravalUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AE81C58673F00FAB475 /* IntelljTravalUITests.swift */; };
 		12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */; };
 		12C80AFA1C58748100FAB475 /* CartUIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12C80AF91C58748100FAB475 /* CartUIViewController.swift */; };
-		12CE290E1C5DBE9A00CCADCF /* ImageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */; };
-		12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE290F1C5DBED100CCADCF /* DataManager.swift */; };
-		12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12E59E281C5C6944007F5788 /* GoodsManager.swift */; };
-		12FBBC3C1C741281008A5E43 /* DataManagerResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBBC3B1C741281008A5E43 /* DataManagerResponse.swift */; };
+		12CE290E1C5DBE9A00CCADCF /* ImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12CE290D1C5DBE9A00CCADCF /* ImageService.swift */; };
+		12FBBC3C1C741281008A5E43 /* DataServiceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12FBBC3B1C741281008A5E43 /* DataServiceResponse.swift */; };
 		21EACB4463E7A06234859F8C /* Pods_IntelljTravalTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D6F15F47A656A5BA0699779 /* Pods_IntelljTravalTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,6 +61,8 @@
 /* Begin PBXFileReference section */
 		121D9DCE1C5B7FE900AA0FAB /* SwiftyJSON.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftyJSON.framework; path = "Pods/../build/Debug-iphoneos/SwiftyJSON.framework"; sourceTree = "<group>"; };
 		1228EECF1C7309C300202CC1 /* GoodDetail.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GoodDetail.swift; path = IntelljTraval/GoodDetail.swift; sourceTree = "<group>"; };
+		124373D01C7EA2DE00FB6C65 /* GoodsService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsService.swift; sourceTree = "<group>"; };
+		124373D21C7EA32600FB6C65 /* DataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
 		125680BA1C76B80A00908C17 /* RadiusUIButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RadiusUIButton.swift; sourceTree = "<group>"; };
 		1258CB6A1C7076780043D99E /* ProductUITableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUITableViewController.swift; sourceTree = "<group>"; };
 		1258CB6C1C7079AD0043D99E /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
@@ -73,11 +75,13 @@
 		127F56741C5B98BE00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
 		127F56751C5B98BE00EB2257 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_IntelljTravalTests.framework; path = "Pods/../build/Debug-iphoneos/Pods_IntelljTravalTests.framework"; sourceTree = "<group>"; };
 		127F56781C5B995A00EB2257 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Alamofire.framework"; sourceTree = "<group>"; };
+		128A07931C7EEB1F00D1F5FC /* VoidCommonObject.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = VoidCommonObject.swift; sourceTree = "<group>"; };
 		129DFC6B1C78105A00FD44F6 /* HexUIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HexUIColor.swift; sourceTree = "<group>"; };
 		129DFFE31C7607CF00E76503 /* ProductDetailUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailUIViewController.swift; sourceTree = "<group>"; };
 		12A050FC1C7DEB5400A64297 /* UIBillboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBillboardViewController.swift; sourceTree = "<group>"; };
 		12A050FE1C7DEC3900A64297 /* UIBillboardViewDelegator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIBillboardViewDelegator.swift; sourceTree = "<group>"; };
 		12ADB0661C5CA7AC0090C676 /* GoodUITableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodUITableViewCell.swift; sourceTree = "<group>"; };
+		12B7E8101C7EA78B00C0894E /* GoodDetailService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodDetailService.swift; sourceTree = "<group>"; };
 		12BFC81C1C6F65270058CF50 /* ProductUIImageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIImageView.swift; sourceTree = "<group>"; };
 		12C80AC31C58673F00FAB475 /* IntelljTraval.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = IntelljTraval.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		12C80AC61C58673F00FAB475 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = IntelljTraval/AppDelegate.swift; sourceTree = "<group>"; };
@@ -93,10 +97,8 @@
 		12C80AEA1C58673F00FAB475 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		12C80AF61C5873DF00FAB475 /* ProductUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductUIViewController.swift; sourceTree = "<group>"; };
 		12C80AF91C58748100FAB475 /* CartUIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CartUIViewController.swift; sourceTree = "<group>"; };
-		12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageManager.swift; sourceTree = "<group>"; };
-		12CE290F1C5DBED100CCADCF /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
-		12E59E281C5C6944007F5788 /* GoodsManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GoodsManager.swift; sourceTree = "<group>"; };
-		12FBBC3B1C741281008A5E43 /* DataManagerResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManagerResponse.swift; sourceTree = "<group>"; };
+		12CE290D1C5DBE9A00CCADCF /* ImageService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageService.swift; sourceTree = "<group>"; };
+		12FBBC3B1C741281008A5E43 /* DataServiceResponse.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataServiceResponse.swift; sourceTree = "<group>"; };
 		1698E0B3DDEED970F6A70C20 /* Pods-IntelljTraval.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTraval.release.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTraval/Pods-IntelljTraval.release.xcconfig"; sourceTree = "<group>"; };
 		2E2750705E79E95D6CB1CDBD /* Pods-IntelljTravalTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-IntelljTravalTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-IntelljTravalTests/Pods-IntelljTravalTests.debug.xcconfig"; sourceTree = "<group>"; };
 		4D6F15F47A656A5BA0699779 /* Pods_IntelljTravalTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_IntelljTravalTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -186,8 +188,8 @@
 				129DFC6A1C78103E00FD44F6 /* utils */,
 				12C80AFE1C587FBC00FAB475 /* ViewControllers */,
 				12E59E2A1C5C9494007F5788 /* Views */,
-				12E59E271C5C691D007F5788 /* DataManagers */,
-				12C80AFC1C587FA400FAB475 /* Models */,
+				12E59E271C5C691D007F5788 /* services */,
+				12C80AFC1C587FA400FAB475 /* domains */,
 				12C80ACC1C58673F00FAB475 /* Main.storyboard */,
 			);
 			path = IntelljTraval;
@@ -222,15 +224,16 @@
 			name = SupportClasses;
 			sourceTree = "<group>";
 		};
-		12C80AFC1C587FA400FAB475 /* Models */ = {
+		12C80AFC1C587FA400FAB475 /* domains */ = {
 			isa = PBXGroup;
 			children = (
 				126D39D21C71C93D0050CE94 /* Good.swift */,
 				126D39D41C71C9700050CE94 /* GenericReturnObject.swift */,
 				126D39D61C71C9B70050CE94 /* CommonObject.swift */,
 				1228EECF1C7309C300202CC1 /* GoodDetail.swift */,
+				128A07931C7EEB1F00D1F5FC /* VoidCommonObject.swift */,
 			);
-			name = Models;
+			name = domains;
 			path = ..;
 			sourceTree = "<group>";
 		};
@@ -246,16 +249,17 @@
 			name = ViewControllers;
 			sourceTree = "<group>";
 		};
-		12E59E271C5C691D007F5788 /* DataManagers */ = {
+		12E59E271C5C691D007F5788 /* services */ = {
 			isa = PBXGroup;
 			children = (
-				12E59E281C5C6944007F5788 /* GoodsManager.swift */,
-				12CE290D1C5DBE9A00CCADCF /* ImageManager.swift */,
-				12CE290F1C5DBED100CCADCF /* DataManager.swift */,
+				12CE290D1C5DBE9A00CCADCF /* ImageService.swift */,
 				126D39D81C71C9DE0050CE94 /* Constants.swift */,
-				12FBBC3B1C741281008A5E43 /* DataManagerResponse.swift */,
+				12FBBC3B1C741281008A5E43 /* DataServiceResponse.swift */,
+				124373D01C7EA2DE00FB6C65 /* GoodsService.swift */,
+				124373D21C7EA32600FB6C65 /* DataService.swift */,
+				12B7E8101C7EA78B00C0894E /* GoodDetailService.swift */,
 			);
-			name = DataManagers;
+			name = services;
 			sourceTree = "<group>";
 		};
 		12E59E2A1C5C9494007F5788 /* Views */ = {
@@ -514,23 +518,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12CE290E1C5DBE9A00CCADCF /* ImageManager.swift in Sources */,
+				12CE290E1C5DBE9A00CCADCF /* ImageService.swift in Sources */,
 				12C80AFA1C58748100FAB475 /* CartUIViewController.swift in Sources */,
 				12BFC81D1C6F65270058CF50 /* ProductUIImageView.swift in Sources */,
 				1258CB6B1C7076780043D99E /* ProductUITableViewController.swift in Sources */,
 				126D39D91C71C9DE0050CE94 /* Constants.swift in Sources */,
+				12B7E8111C7EA78B00C0894E /* GoodDetailService.swift in Sources */,
+				124373D11C7EA2DE00FB6C65 /* GoodsService.swift in Sources */,
 				129DFFE41C7607CF00E76503 /* ProductDetailUIViewController.swift in Sources */,
 				12C80AF71C5873DF00FAB475 /* ProductUIViewController.swift in Sources */,
-				12E59E291C5C6944007F5788 /* GoodsManager.swift in Sources */,
 				129DFC6C1C78105A00FD44F6 /* HexUIColor.swift in Sources */,
 				12A050FF1C7DEC3900A64297 /* UIBillboardViewDelegator.swift in Sources */,
 				126D39D71C71C9B70050CE94 /* CommonObject.swift in Sources */,
-				12FBBC3C1C741281008A5E43 /* DataManagerResponse.swift in Sources */,
+				12FBBC3C1C741281008A5E43 /* DataServiceResponse.swift in Sources */,
 				126D39D51C71C9700050CE94 /* GenericReturnObject.swift in Sources */,
+				128A07941C7EEB1F00D1F5FC /* VoidCommonObject.swift in Sources */,
 				12ADB0671C5CA7AC0090C676 /* GoodUITableViewCell.swift in Sources */,
 				1258CB6D1C7079AD0043D99E /* ProductTableViewCell.swift in Sources */,
+				124373D31C7EA32600FB6C65 /* DataService.swift in Sources */,
 				12A050FD1C7DEB5400A64297 /* UIBillboardViewController.swift in Sources */,
-				12CE29101C5DBED100CCADCF /* DataManager.swift in Sources */,
 				126D39D31C71C93D0050CE94 /* Good.swift in Sources */,
 				125680BB1C76B80A00908C17 /* RadiusUIButton.swift in Sources */,
 				12C80AC71C58673F00FAB475 /* AppDelegate.swift in Sources */,
@@ -542,9 +548,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				12A051001C7DEF7C00A64297 /* UIBillboardViewDelegator.swift in Sources */,
 				12C80ADE1C58673F00FAB475 /* IntelljTravalTests.swift in Sources */,
-				12A051011C7DEF9400A64297 /* UIBillboardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
