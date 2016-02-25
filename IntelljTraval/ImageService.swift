@@ -10,7 +10,7 @@ import Foundation
 import Alamofire
 import Kingfisher
 
-class ImageManager: DataManager {
+class ImageService: DataService {
     struct DataManagerConfig {
         static let MAX_DISK_CACHE: UInt = 50 * 1024 * 1024
         static let MAX_CACHE_PERIOD_IN_SECOND: NSTimeInterval = 60 * 60 * 24 * 3

@@ -27,8 +27,8 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     var page: Int = 1
     var footerIndicator: UIActivityIndicatorView?
     
-    let goodsManager: GoodsManager = GoodsManager()
-    let imageManager: ImageManager = ImageManager()
+    let goodsManager: GoodsService = GoodsService()
+    let imageManager: ImageService = ImageService()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -205,7 +205,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             sortType:               Constants.sortType,
             page:                   String(page),
             pageSize:               Constants.pageSize,
-            dataManagerResponse:    DataManagerResponse<Good>(
+            dataManagerResponse:    DataServiceResponse<Good>(
                 success:    getGoodsSuccess,
                 error:      getGoodsError
             )
@@ -231,7 +231,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
                 sortType:               Constants.sortType,
                 page:                   String(page),
                 pageSize:               Constants.pageSize,
-                dataManagerResponse:    DataManagerResponse<Good>(
+                dataManagerResponse:    DataServiceResponse<Good>(
                     success:    addGoods,
                     error:      getGoodsError
                 )
@@ -251,7 +251,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             sortType:               Constants.sortType,
             page:                   String(page),
             pageSize:               Constants.pageSize,
-            dataManagerResponse:    DataManagerResponse<Good>(
+            dataManagerResponse:    DataServiceResponse<Good>(
                 success:    getGoodsSuccess,
                 error:      getGoodsError
             )

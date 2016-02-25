@@ -1,4 +1,13 @@
 //
+//  GoodService.swift
+//  IntelljTraval
+//
+//  Created by 易诗尧 on 16/2/25.
+//  Copyright © 2016年 yishiyao. All rights reserved.
+//
+
+import Foundation
+//
 //  GoodsHttpController.swift
 //  IntelljTraval
 //
@@ -10,7 +19,7 @@ import Foundation
 import SwiftyJSON
 import Alamofire
 
-class GoodsManager: DataManager {
+class GoodsService: DataService {
     
     //*****************************************************************
     // MARK : Get JSON from server
@@ -27,9 +36,9 @@ class GoodsManager: DataManager {
         
         Alamofire.request(.GET, Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters).responseString {
             response in
-//            print(response.result.isSuccess)
-//            print(response.result.value)
-//            print(response.result.error)
+            //            print(response.result.isSuccess)
+            //            print(response.result.value)
+            //            print(response.result.error)
             
             if response.result.isSuccess {
                 if let goodJson = response.result.value {
@@ -48,7 +57,7 @@ class GoodsManager: DataManager {
         }
     }
     
-    func getGoods(scenicId scenicId: String, searchContent: String, type: String, sortType: String, page:String, pageSize: String, dataManagerResponse: DataManagerResponse<Good>) {
+    func getGoods(scenicId scenicId: String, searchContent: String, type: String, sortType: String, page:String, pageSize: String, dataManagerResponse: DataServiceResponse<Good>) {
         let parameters = [
             "scenicId"      : scenicId,
             "searchContent" : searchContent,
@@ -57,6 +66,6 @@ class GoodsManager: DataManager {
             "page"          : page,
             "pageSize"      : pageSize
         ]
-        sendGetRequest(Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters, dataManagerResponse: dataManagerResponse)
+        sendGetRequest(Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters, dataServiceResponse: dataManagerResponse)
     }
 }

@@ -8,7 +8,7 @@
 
 import Foundation
 
-class DataManagerResponse<T: CommonObject> {
+class DataServiceResponse<T: CommonObject> {
     var success: (commonObjects: [T]) -> ()
     var error: (error: NSError) -> ()
     init(success: (commonObjects: [T]) -> (), error: (error: NSError) -> ()) {

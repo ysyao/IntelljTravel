@@ -525,27 +525,23 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-07-IHH">
+                                <rect key="frame" x="281" y="43" width="39" height="37"/>
+                                <color key="tintColor" red="0.20000000000000001" green="0.80000000000000004" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </pageControl>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="chO-NA-Ecx">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="80"/>
-                                <subviews>
-                                    <pageControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" numberOfPages="3" translatesAutoresizingMaskIntoConstraints="NO" id="Sy4-07-IHH">
-                                        <rect key="frame" x="281" y="35" width="39" height="37"/>
-                                    </pageControl>
-                                </subviews>
-                                <constraints>
-                                    <constraint firstItem="Sy4-07-IHH" firstAttribute="centerX" secondItem="chO-NA-Ecx" secondAttribute="centerX" id="WJA-pY-gQZ"/>
-                                    <constraint firstItem="Sy4-07-IHH" firstAttribute="top" secondItem="chO-NA-Ecx" secondAttribute="top" constant="35" id="o9T-fG-1Ax"/>
-                                    <constraint firstItem="Sy4-07-IHH" firstAttribute="bottom" secondItem="chO-NA-Ecx" secondAttribute="bottomMargin" id="oij-x7-Ihh"/>
-                                    <constraint firstAttribute="trailing" secondItem="Sy4-07-IHH" secondAttribute="trailing" constant="280" id="tlO-8Q-aKt"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
                             </scrollView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="chO-NA-Ecx" firstAttribute="leading" secondItem="ss8-nL-aKl" secondAttribute="leading" id="4qx-ae-Ine"/>
-                            <constraint firstItem="chO-NA-Ecx" firstAttribute="top" secondItem="z9V-lB-1Eg" secondAttribute="bottom" id="gTB-WQ-1n7"/>
-                            <constraint firstItem="chO-NA-Ecx" firstAttribute="bottom" secondItem="kjA-f5-CFl" secondAttribute="top" id="hzU-ra-sVM"/>
-                            <constraint firstAttribute="trailing" secondItem="chO-NA-Ecx" secondAttribute="trailing" id="nXl-9c-DUf"/>
+                            <constraint firstItem="chO-NA-Ecx" firstAttribute="centerX" secondItem="Sy4-07-IHH" secondAttribute="centerX" id="CXE-G9-wLO"/>
+                            <constraint firstItem="Sy4-07-IHH" firstAttribute="bottom" secondItem="kjA-f5-CFl" secondAttribute="top" id="ITt-hh-PAV"/>
+                            <constraint firstItem="chO-NA-Ecx" firstAttribute="bottom" secondItem="kjA-f5-CFl" secondAttribute="top" id="JfP-D4-G5c"/>
+                            <constraint firstItem="chO-NA-Ecx" firstAttribute="leading" secondItem="ss8-nL-aKl" secondAttribute="leading" id="ZDV-F0-Xy9"/>
+                            <constraint firstItem="chO-NA-Ecx" firstAttribute="top" secondItem="z9V-lB-1Eg" secondAttribute="bottom" id="qs3-sp-SNI"/>
+                            <constraint firstAttribute="trailing" secondItem="chO-NA-Ecx" secondAttribute="trailing" id="stj-MH-ww5"/>
                         </constraints>
                     </view>
                     <connections>

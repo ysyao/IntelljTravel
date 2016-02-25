@@ -22,8 +22,8 @@ class ProductUIViewController: UIViewController, UITableViewDataSource, UITableV
         }
     }
     
-    let goodsManager: GoodsManager = GoodsManager()
-    let imageManager: ImageManager = ImageManager()
+    let goodsManager: GoodsService = GoodsService()
+    let imageManager: ImageService = ImageService()
     var uiRefreshControl: UIRefreshControl?
     
     override func viewDidLoad() {
