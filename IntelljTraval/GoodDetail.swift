@@ -9,7 +9,10 @@
 import SwiftyJSON
 import Alamofire
 
-class GoodDetail: CommonObject{
+class GoodDetail: CommonObject {
+    
+    required init() {
+    }
 //    "obj": {
 //    "phone": null,
 //    "lng": null,
@@ -64,10 +67,6 @@ class GoodDetail: CommonObject{
     var salePrice: Int?
     var goodsName: String?
     var interficeType: String?
-    
-    required init() {
-
-    }
     
     func parseObject(obj: JSON) -> CommonObject {
         let goodDetail = GoodDetail()

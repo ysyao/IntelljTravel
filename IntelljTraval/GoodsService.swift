@@ -46,7 +46,7 @@ class GoodsService: DataService {
                     let json: JSON = JSON.parse(goodJson)
                     
                     //解析json
-                    let genericGood = GenericReturnObject<Good>()
+                    let genericGood = GenericReturnObject<Good, VoidCommonObject>()
                     let goods: [Good] = genericGood.parseGenericReturnObject(json).list
                     
                     success(goods: goods)
@@ -57,7 +57,7 @@ class GoodsService: DataService {
         }
     }
     
-    func getGoods(scenicId scenicId: String, searchContent: String, type: String, sortType: String, page:String, pageSize: String, dataManagerResponse: DataServiceResponse<Good>) {
+    func getGoods(scenicId scenicId: String, searchContent: String, type: String, sortType: String, page:String, pageSize: String, dataServiceResponse: DataServiceResponse<Good, VoidCommonObject>) -> Request {
         let parameters = [
             "scenicId"      : scenicId,
             "searchContent" : searchContent,
@@ -66,6 +66,6 @@ class GoodsService: DataService {
             "page"          : page,
             "pageSize"      : pageSize
         ]
-        sendGetRequest(Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters, dataServiceResponse: dataManagerResponse)
+        return sendGetRequest(Constants.IntelljTravalURL.GET_GOODS_LIST, parameters: parameters, dataServiceResponse: dataServiceResponse)
     }
 }

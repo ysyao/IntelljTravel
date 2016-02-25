@@ -264,7 +264,7 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohf-Oj-6O7">
                                         <rect key="frame" x="0.0" y="96" width="600" height="116"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥22.5" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uco-Y2-hlL">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uco-Y2-hlL">
                                                 <rect key="frame" x="8" y="72" width="522" height="36"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="36" id="IzC-1N-Kff"/>
@@ -273,7 +273,7 @@
                                                 <color key="textColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKf-mD-thB" customClass="RadiusUIButton" customModule="IntelljTraval" customModuleProvider="target">
+                                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKf-mD-thB" customClass="RadiusUIButton" customModule="IntelljTraval" customModuleProvider="target">
                                                 <rect key="frame" x="538" y="43" width="54" height="29"/>
                                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="18"/>
@@ -282,7 +282,7 @@
                                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                                 </state>
                                             </button>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="花果山水帘洞金角大王名字发生亏大发记录是大陆法第三方开发啦" lineBreakMode="clip" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-EE-pyx">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" lineBreakMode="clip" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YSX-EE-pyx">
                                                 <rect key="frame" x="8" y="8" width="522" height="56"/>
                                                 <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="18"/>
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
@@ -297,6 +297,7 @@
                                             <constraint firstAttribute="height" constant="116" id="Ac3-Cc-5DU"/>
                                             <constraint firstItem="aKf-mD-thB" firstAttribute="trailing" secondItem="Ohf-Oj-6O7" secondAttribute="trailingMargin" id="EdU-4J-a2i"/>
                                             <constraint firstItem="aKf-mD-thB" firstAttribute="top" secondItem="Ohf-Oj-6O7" secondAttribute="top" constant="43" id="FFC-VJ-bf7"/>
+                                            <constraint firstItem="YSX-EE-pyx" firstAttribute="width" secondItem="uco-Y2-hlL" secondAttribute="width" id="Ipb-xV-YHG"/>
                                             <constraint firstItem="YSX-EE-pyx" firstAttribute="leading" secondItem="uco-Y2-hlL" secondAttribute="leading" id="P4e-ib-5qo"/>
                                             <constraint firstItem="aKf-mD-thB" firstAttribute="top" secondItem="Ohf-Oj-6O7" secondAttribute="top" constant="43" id="V9l-W6-eld"/>
                                             <constraint firstItem="uco-Y2-hlL" firstAttribute="top" secondItem="YSX-EE-pyx" secondAttribute="bottom" constant="8" symbolic="YES" id="azN-m0-3hD"/>
@@ -338,7 +339,7 @@
                                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="电视剧方老师就爱上；浪费就撒手快乐；房间卡死了飞洒；福建打工我狗儿基恩上对方那沙发沙克斯死了加快立法是会计法哈时候的冻死了房间爱开始大家分工IE及认购俄国家饿哦个哦诶俄日个哦肌肉额外我割肉过几日额" lineBreakMode="clip" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-GW-rG5">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="clip" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A9z-GW-rG5">
                                                 <rect key="frame" x="8" y="40" width="584" height="62"/>
                                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                 <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
@@ -392,6 +393,11 @@
                         <barButtonItem key="backBarButtonItem" title="取消" id="cEM-qn-M22"/>
                     </navigationItem>
                     <nil key="simulatedStatusBarMetrics"/>
+                    <connections>
+                        <outlet property="productIntroLabel" destination="A9z-GW-rG5" id="g11-Iq-YGR"/>
+                        <outlet property="productNameLabel" destination="YSX-EE-pyx" id="lBo-Y9-LwJ"/>
+                        <outlet property="productPriceLabel" destination="uco-Y2-hlL" id="yPp-Pm-Gmz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YBO-vJ-edW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

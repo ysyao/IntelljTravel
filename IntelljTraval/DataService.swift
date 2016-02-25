@@ -13,25 +13,24 @@ import SwiftyJSON
 class DataService {
     init () {}
     
-    func parseList<T: CommonObject>(response: Response<String, NSError>, dataServiceResponse: DataServiceResponse<T>) {
+    func parseList<T: CommonObject, V: CommonObject>(response: Response<String, NSError>, dataServiceResponse: DataServiceResponse<T, V>) {
         if response.result.isSuccess {
             if let jsonValue = response.result.value {
                 //将获取到的string结果转换成为JSON，方便映射
                 let json: JSON = JSON.parse(jsonValue)
                 
-                let generic = GenericReturnObject<T>()
+                let generic = GenericReturnObject<T, V>()
                 //解析json
-                let list = generic.parseGenericReturnObject(json).list
-                dataServiceResponse.success(commonObjects: list)
+                dataServiceResponse.success(genericReturnObject: generic.parseGenericReturnObject(json))
             }
         } else {
             dataServiceResponse.error(error: response.result.error!)
         }
     }
     
-    func sendGetRequest<T: CommonObject>(url: String, parameters: [String: AnyObject]?, dataServiceResponse: DataServiceResponse<T>) {
+    func sendGetRequest<T: CommonObject, V: CommonObject>(url: String, parameters: [String: AnyObject]?, dataServiceResponse: DataServiceResponse<T, V>) -> Request {
         print(url)
-        Alamofire.request(.GET, url, parameters: parameters).responseString {
+        return Alamofire.request(.GET, url, parameters: parameters).responseString {
             response in
             if response.result.isSuccess {
                 self.parseList(response, dataServiceResponse: dataServiceResponse)

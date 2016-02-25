@@ -149,19 +149,20 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     //*****************************************************************
     // MARK : 获取产品列表成功回调
     //*****************************************************************
-    func getGoodsSuccess(goods: [Good]) -> Void {
+    func getGoodsSuccess(genericReturnObject: GenericReturnObject<Good, VoidCommonObject>) -> Void {
         //将刷新状态解除
         if self.refreshControl!.refreshing {
            self.refreshControl!.endRefreshing()
         }
-
+        
+        let goods = genericReturnObject.list
         self.goods = goods
     }
     
     //*****************************************************************
     // MARK : 获取更多数据成功回调
     //*****************************************************************
-    func addGoods(goods: [Good]) -> Void {
+    func addGoods(genericReturnObject: GenericReturnObject<Good, VoidCommonObject>) -> Void {
         //将底部载入indicator解除
         if let tableRefreshing = footerIndicator?.isAnimating() {
             if tableRefreshing {
@@ -169,6 +170,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             }
         }
         
+        let goods = genericReturnObject.list
         //当没有新数据的情况，不做任何处理返回
         if (goods.count == 0) {
             return
@@ -205,7 +207,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             sortType:               Constants.sortType,
             page:                   String(page),
             pageSize:               Constants.pageSize,
-            dataManagerResponse:    DataServiceResponse<Good>(
+            dataServiceResponse:    DataServiceResponse<Good, VoidCommonObject>(
                 success:    getGoodsSuccess,
                 error:      getGoodsError
             )
@@ -231,7 +233,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
                 sortType:               Constants.sortType,
                 page:                   String(page),
                 pageSize:               Constants.pageSize,
-                dataManagerResponse:    DataServiceResponse<Good>(
+                dataServiceResponse:    DataServiceResponse<Good, VoidCommonObject>(
                     success:    addGoods,
                     error:      getGoodsError
                 )
@@ -251,7 +253,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             sortType:               Constants.sortType,
             page:                   String(page),
             pageSize:               Constants.pageSize,
-            dataManagerResponse:    DataServiceResponse<Good>(
+            dataServiceResponse:    DataServiceResponse<Good, VoidCommonObject>(
                 success:    getGoodsSuccess,
                 error:      getGoodsError
             )

@@ -9,13 +9,13 @@
 import Foundation
 import SwiftyJSON
 
-public class GenericReturnObject<T: CommonObject> {
-    var obj: AnyObject?
+public class GenericReturnObject<T: CommonObject, V: CommonObject> {
+    var obj: V = V()
     lazy var list = [T]()
     var rn: String?
     var ri: NSObject?
     
-    public func parseGenericReturnObject(resultJson: JSON) -> GenericReturnObject<T> {
+    public func parseGenericReturnObject(resultJson: JSON) -> GenericReturnObject<T, V> {
         if resultJson != nil {
             if let listJson = resultJson["list"].array {
                 for tJson in listJson {
@@ -24,7 +24,7 @@ public class GenericReturnObject<T: CommonObject> {
                 }
             }
             
-            if let obj: AnyObject = resultJson["obj"].object {
+            if let obj: V = obj.parseObject(resultJson["obj"]) as? V {
                 self.obj = obj
             }
             

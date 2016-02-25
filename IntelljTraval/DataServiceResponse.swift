@@ -8,10 +8,10 @@
 
 import Foundation
 
-class DataServiceResponse<T: CommonObject> {
-    var success: (commonObjects: [T]) -> ()
+class DataServiceResponse<T: CommonObject, V: CommonObject> {
+    var success: (genericReturnObject: GenericReturnObject<T, V>) -> ()
     var error: (error: NSError) -> ()
-    init(success: (commonObjects: [T]) -> (), error: (error: NSError) -> ()) {
+    init(success: (genericReturnObject: GenericReturnObject<T, V>) -> (), error: (error: NSError) -> ()) {
         self.success = success
         self.error = error
     }
