@@ -16,15 +16,18 @@ class ProductDetailUIViewController: UIViewController {
     @IBOutlet weak var productNameLabel: UILabel!
     @IBOutlet weak var productPriceLabel: UILabel!
     @IBOutlet weak var productIntroLabel: UILabel!
+    @IBOutlet weak var introParent: UIView!
+    @IBOutlet weak var rootScrollView: UIScrollView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        goodDetailService.getGoodDetail (
-            productId:  String(13),
-            type:       "",
-            dataServiceResponse: DataServiceResponse(success: getGoodsDetailSuccess, error: getGoodsError)
-        )
+        if let productId = self.good?.id {
+            goodDetailService.getGoodDetail (
+                productId:  String(productId),
+                type:       "",
+                dataServiceResponse: DataServiceResponse(success: getGoodsDetailSuccess, error: getGoodsError)
+            )
+        }
     }
     
     
@@ -34,10 +37,12 @@ class ProductDetailUIViewController: UIViewController {
     func getGoodsDetailSuccess(genericReturnObject: GenericReturnObject<VoidCommonObject, GoodDetail>) -> Void {
         let detail = genericReturnObject.obj
         self.productNameLabel.text = detail.goodsName
+        self.productNameLabel.sizeToFit()
         if let price = detail.salePrice {
              self.productPriceLabel.text = "¥\(price)"
         }
         self.productIntroLabel.text = detail.intro
+        self.productIntroLabel.sizeToFit()
     }
     
     //*****************************************************************
