@@ -64,4 +64,37 @@ class ImageService: DataService {
             }
         }
     }
+    
+    // ***********************************
+    // MARK : 通过图片id从服务器下载图片
+    // ***********************************
+    func retrieveImageFromServerOrCache(pictureId picId: Int, imageView: UIImageView) {
+        let url = Constants.IntelljTravalURL.IT_PICTURE_URL + "\(picId)"
+        
+        //查看要下载的图片是否已经被缓存，如果已经被缓存直接用现成的
+        if let imageCached = self.imageCache!.retrieveImageInDiskCacheForKey(url) {
+            imageView.image = imageCached
+        } else {
+            print(url)
+            //在图片没有缓存的情况下下载
+            Alamofire.request(.GET, url).validate().responseData {
+                responseData in
+                if responseData.result.isSuccess {
+                    if let data = responseData.result.value {
+                        let image: UIImage = UIImage(data: data)!
+                        
+                        self.imageCache!.storeImage(image, forKey: url, toDisk: true, completionHandler: { () -> () in
+                            if let imageCached = self.imageCache!.retrieveImageInDiskCacheForKey(url) {
+                                imageView.image = imageCached
+                            }
+                        })
+                    }
+                } else {
+                    print(responseData.result.error)
+                }
+            }
+        }
+    }
+    
+    
 }
