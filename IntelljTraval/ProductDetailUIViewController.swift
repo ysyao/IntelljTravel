@@ -45,11 +45,6 @@ class ProductDetailUIViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //设置indicator
-//        self.indicator = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
-        self.indicator.frame = self.view.frame
-//        self.indicator.layer.backgroundColor = (UIColor(white: 0.0, alpha: 1.0) as! CGColor)
-//        self.indicator.center = self.view.center
         
         //获取数据
         if let productId = self.good?.id {

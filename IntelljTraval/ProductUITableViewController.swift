@@ -33,7 +33,7 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
     override func viewDidLoad() {
         super.viewDidLoad()
         //设置navigation bar为白色解决了阴影问题，也解决了searchbar位置错误的问题
-        self.navigationController!.view.backgroundColor = UIColor(white: 1, alpha: 1)
+//        self.navigationController!.view.backgroundColor = UIColor(white: 1, alpha: 1)
         
         //配置刷新控制器
         self.refreshControl = UIRefreshControl()
@@ -88,8 +88,6 @@ class ProductUITableViewController: UITableViewController, UISearchResultsUpdati
             let storyboard = UIStoryboard(name: "Main", bundle: nil)
             if let productDetailVc: ProductDetailUIViewController = storyboard.instantiateViewControllerWithIdentifier("productDetailVc") as? ProductDetailUIViewController {
                 productDetailVc.good = goods[indexPath.row]
-                
-                self.searchController.searchBar
                 
                 self.hidesBottomBarWhenPushed = true
                 self.navigationController?.pushViewController(productDetailVc, animated: true)

@@ -9,12 +9,14 @@ target 'IntelljTraval' do
     pod 'SwiftyJSON', '~> 2.3.2'
     pod 'Alamofire', '~> 3.0'
     pod 'Kingfisher', '~> 2.0'
+    pod 'DLRadioButton', '~> 1.4'
 end
 
 target 'IntelljTravalTests' do
      pod 'SwiftyJSON', '~> 2.3.2'
      pod 'Alamofire', '~> 3.0'
      pod 'Kingfisher', '~> 2.0'
+     pod 'DLRadioButton', '~> 1.4'
 end
 
 target 'IntelljTravalUITests' do
