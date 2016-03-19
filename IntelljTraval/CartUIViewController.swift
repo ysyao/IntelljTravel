@@ -17,7 +17,10 @@ class CartUIViewController: UIViewController, UITableViewDataSource, UITableView
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        //实例化一个tableview的cell，在之后计算高度的时候会用到
         cartCell = (self.tableView.dequeueReusableCellWithIdentifier("CartPrototypeIdentity") as! CartTableViewCell)
+        
+        //添加底部tablefooterview，能够让被总价格栏遮挡的部分显示出来。
         self.tableView.tableFooterView = UIView(frame: CGRectMake(0 ,0, self.tableView.frame.size.width, 50))
     }
 
