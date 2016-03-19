@@ -18,6 +18,7 @@ class CartUIViewController: UIViewController, UITableViewDataSource, UITableView
 
         // Do any additional setup after loading the view.
         cartCell = (self.tableView.dequeueReusableCellWithIdentifier("CartPrototypeIdentity") as! CartTableViewCell)
+        self.tableView.tableFooterView = UIView(frame: CGRectMake(0 ,0, self.tableView.frame.size.width, 50))
     }
 
     override func didReceiveMemoryWarning() {
