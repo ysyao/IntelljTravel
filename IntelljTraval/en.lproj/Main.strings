@@ -1,0 +1,84 @@
+
+/* Class = "UILabel"; text = "194.00"; ObjectID = "1OH-h1-cuE"; */
+"1OH-h1-cuE.text" = "194.00";
+
+/* Class = "UITableViewCell"; accessibilityIdentifier = "goodTableCell"; ObjectID = "3Zw-rZ-Eqs"; */
+"3Zw-rZ-Eqs.accessibilityIdentifier" = "goodTableCell";
+
+/* Class = "UILabel"; text = "2016-03-11 00:00:00"; ObjectID = "6Ep-oX-YMz"; */
+"6Ep-oX-YMz.text" = "2016-03-11 00:00:00";
+
+/* Class = "UILabel"; text = "−"; ObjectID = "8rK-Wa-gUR"; */
+"8rK-Wa-gUR.text" = "−";
+
+/* Class = "UILabel"; text = "商品介绍："; ObjectID = "9Dg-tE-S6S"; */
+"9Dg-tE-S6S.text" = "商品介绍：";
+
+/* Class = "UILabel"; text = "一共选中了7件商品"; ObjectID = "9eK-Ji-8po"; */
+"9eK-Ji-8po.text" = "一共选中了7件商品";
+
+/* Class = "UILabel"; text = "九寨沟-九寨好牛肉大礼包这是特别的爱个特别的你的时代"; ObjectID = "E55-WN-DOk"; */
+"E55-WN-DOk.text" = "九寨沟-九寨好牛肉大礼包这是特别的爱个特别的你的时代";
+
+/* Class = "UILabel"; text = "全选"; ObjectID = "Hey-vP-0TZ"; */
+"Hey-vP-0TZ.text" = "全选";
+
+/* Class = "UILabel"; text = "+"; ObjectID = "Hi8-43-Ufh"; */
+"Hi8-43-Ufh.text" = "+";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "LhT-No-FTQ"; */
+"LhT-No-FTQ.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "OKy-Y3-yiA"; */
+"OKy-Y3-yiA.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "购物车"; ObjectID = "QYW-gi-iD2"; */
+"QYW-gi-iD2.title" = "购物车";
+
+/* Class = "UILabel"; text = "消费时间"; ObjectID = "UUm-uh-dDF"; */
+"UUm-uh-dDF.text" = "消费时间";
+
+/* Class = "UILabel"; text = "1"; ObjectID = "Um1-VV-AYW"; */
+"Um1-VV-AYW.text" = "1";
+
+/* Class = "UINavigationItem"; title = "商品详情"; ObjectID = "Vby-2B-vzg"; */
+"Vby-2B-vzg.title" = "商品详情";
+
+/* Class = "UILabel"; text = "购买数量"; ObjectID = "W8O-V4-oEk"; */
+"W8O-V4-oEk.text" = "购买数量";
+
+/* Class = "UINavigationItem"; title = "商品列表"; ObjectID = "Xq2-lM-377"; */
+"Xq2-lM-377.title" = "商品列表";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Zlu-RQ-rzp"; */
+"Zlu-RQ-rzp.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "购买"; ObjectID = "aKf-mD-thB"; */
+"aKf-mD-thB.normalTitle" = "购买";
+
+/* Class = "UITabBarItem"; title = "商品"; ObjectID = "acW-dT-cKf"; */
+"acW-dT-cKf.title" = "商品";
+
+/* Class = "UIBarButtonItem"; title = "取消"; ObjectID = "cEM-qn-M22"; */
+"cEM-qn-M22.title" = "取消";
+
+/* Class = "UILabel"; text = "合计：999.33"; ObjectID = "gU8-sa-LMw"; */
+"gU8-sa-LMw.text" = "合计：999.33";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jl6-X8-34N"; */
+"jl6-X8-34N.text" = "Label";
+
+/* Class = "UINavigationItem"; title = "商品列表"; ObjectID = "joy-Vr-G4I"; */
+"joy-Vr-G4I.title" = "商品列表";
+
+/* Class = "UITabBarItem"; title = "商品"; ObjectID = "kQS-Qz-G1B"; */
+"kQS-Qz-G1B.title" = "商品";
+
+/* Class = "UIButton"; normalTitle = "去结算"; ObjectID = "pjz-CU-H1L"; */
+"pjz-CU-H1L.normalTitle" = "去结算";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "tmz-R7-BQ9"; */
+"tmz-R7-BQ9.text" = "Label";
+
+/* Class = "UINavigationController"; title = "购物车"; ObjectID = "xYZ-uy-QYf"; */
+"xYZ-uy-QYf.title" = "购物车";
